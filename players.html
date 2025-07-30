@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silver Wings - Players</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/css/css.css">
+</head>
+<body class="bg-gradient-to-b from-[#0a0e1a] to-[#1a1f3b] font-sans text-white min-h-screen pt-16">
+    <header class="fixed top-0 left-0 w-full bg-gradient-to-r from-indigo-900/90 to-purple-900/90 px-6 py-4 shadow-lg backdrop-blur-md border-b border-indigo-800/50 z-50">
+        <div class="container flex items-center justify-between relative z-50">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-3">
+            <img src="./assets/images/logo.png" alt="Silver Wings" class="w-12 h-12 drop-shadow-[0_0_12px_rgba(99,102,241,0.8)] rounded-full">
+            <span class="text-2xl font-extrabold text-slate-100 drop-shadow-md tracking-wide select-none">Silver Wings</span>
+            </a>
+
+            <!-- Menu Nav desktop -->
+            <nav class="hidden md:flex space-x-8 text-slate-200 font-semibold tracking-wide">
+                <a href="index.html" class="hover:text-indigo-400 transition">Home</a>
+                <a href="players.html" class="hover:text-indigo-400 transition">Players</a>
+                <a href="screenshots.html" class="hover:text-indigo-400 transition">Screenshots</a>
+                
+                <a href="https://discord.gg/vBAF3xn6tP" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-400 transition flex items-center" aria-label="Discord">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6 drop-shadow-lg" viewBox="0 0 24 24">
+                    <path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561 19.9 19.9 0 0 0 6.037 3.0746.0777.0777 0 0 0 .0842-.0276c.4646-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057 13.2393 13.2393 0 0 1-1.872-.8886.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0786-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .081.0095c.119.099.246.1981.3727.2924a.0766.0766 0 0 1-.006.1276 12.105 12.105 0 0 1-1.873.8887.0766.0766 0 0 0-.0407.106c.3604.698.7709 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.028 19.9114 19.9114 0 0 0 6.038-3.075.0822.0822 0 0 0 .0307-.0559c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1824 0-2.1568-1.0857-2.1568-2.419 0-1.3332.9554-2.4189 2.1568-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189z"/>
+                    </svg>
+                    <span class="ml-1 text-sm">Discord</span>
+                </a>
+                <!-- Entrar na Guild com pulsação -->
+                <a href="https://docs.google.com/forms/d/1TykA27-LIL8ointbPsMHn8GN6proKERVE0nirr_WsBU" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg shadow-md transition 
+                        animate-pulse-slow">
+                    Entrar na Guild
+                </a>
+                <button
+                    aria-label="Login com Google"
+                    class="flex items-center gap-2 bg-white text-gray-800 px-3 py-1.5 rounded-lg shadow-md hover:shadow-lg transition"
+                    onclick="window.open('https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=353985333474-88ga5vak3e1r9jr9pnh4amaj7fa39far.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fusers.wix.com%2Fiam%2Fgoogle-idp%2Fv1%2Fsso%2Fredirect&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=%7B%22redirectTo%22%3A%22https%3A%2F%2Fwww.silverwings.com.br%2F_api%2Fiam%2Fauthentication%2Fv1%2Fsso%2Fcallback%2FSITE%2F1cfefa50-f33e-4c78-ab3a-cd059e9f7a5d%2F0e6a50f5-b523-4e29-990d-f37fa2ffdd69%22%2C%22forwardedState%22%3A%22%7B%5C%22tenantInfo%5C%22%3A%7B%5C%22tenantId%5C%22%3A%5C%221cfefa50-f33e-4c78-ab3a-cd059e9f7a5d%5C%22%2C%5C%22tenantType%5C%22%3A%5C%22SITE%5C%22%7D%2C%5C%22customPayload%5C%22%3A%7B%5C%22sessionId%5C%22%3A%5C%2250ff6e24-a15f-4dfe-b67f-d43e8a85d031%5C%22%2C%5C%22encryptionKey%5C%22%3A%5C%22UDtgIkzvEsgBqhJop8t3V%2FTQ5lyrVoFuML%2BN1wA9ZP8%3D%5C%22%7D%7D%22%7D&service=lso&o2v=1&flowName=GeneralOAuthFlow')"
+                >
+                    <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google" class="w-5 h-5">
+                    <span class="font-medium text-sm select-none">Login</span>
+                </button>
+            </nav>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" aria-label="Abrir menu" class="md:hidden text-slate-200 hover:text-indigo-400 transition focus:outline-none z-50">
+            <!-- Ícone hambúrguer -->
+            <svg id="icon-menu" class="w-8 h-8 block" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+            <!-- Ícone fechar (X) -->
+            <svg id="icon-close" class="w-8 h-8 hidden" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+            </button>
+        </div>
+
+        <!-- Overlay para clique fora -->
+        <div id="overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
+
+        <!-- Mobile menu lateral -->
+        <nav id="mobile-menu" class="fixed top-0 left-0 h-screen w-64 bg-gradient-to-b from-indigo-900/95 to-purple-900/95 backdrop-blur-md transform -translate-x-full transition-transform duration-300 ease-in-out z-50 flex flex-col pt-24 px-6 space-y-8 text-slate-200 text-lg font-semibold">
+            <a href="index.html" class="hover:text-indigo-400 transition" onclick="closeMobileMenu()">Home</a>
+            <a href="players.html" class="hover:text-indigo-400 transition" onclick="closeMobileMenu()">Players</a>
+            <a href="screenshots.html" class="hover:text-indigo-400 transition" onclick="closeMobileMenu()">Screenshots</a>
+            <a href="https://docs.google.com/forms/d/1TykA27-LIL8ointbPsMHn8GN6proKERVE0nirr_WsBU" target="_blank" class="hover:text-indigo-400 transition" onclick="closeMobileMenu()">Entrar na Guild</a>
+  
+            <a href="https://discord.gg/vBAF3xn6tP" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-400 transition flex items-center gap-2" aria-label="Discord" onclick="closeMobileMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-7 h-7 drop-shadow-lg" viewBox="0 0 24 24">
+                <path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561 19.9 19.9 0 0 0 6.037 3.0746.0777.0777 0 0 0 .0842-.0276c.4646-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057 13.2393 13.2393 0 0 1-1.872-.8886.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0786-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .081.0095c.119.099.246.1981.3727.2924a.0766.0766 0 0 1-.006.1276 12.105 12.105 0 0 1-1.873.8887.0766.0766 0 0 0-.0407.106c.3604.698.7709 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.028 19.9114 19.9114 0 0 0 6.038-3.075.0822.0822 0 0 0 .0307-.0559c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1824 0-2.1568-1.0857-2.1568-2.419 0-1.3332.9554-2.4189 2.1568-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189z"/>
+            </svg>
+            Discord
+            </a>
+
+            <button
+            aria-label="Login com Google"
+            class="flex items-center gap-3 bg-white text-gray-800 px-5 py-2 rounded-lg shadow-md hover:shadow-lg transition"
+            onclick="window.open('https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=353985333474-88ga5vak3e1r9jr9pnh4amaj7fa39far.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fusers.wix.com%2Fiam%2Fgoogle-idp%2Fv1%2Fsso%2Fredirect&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=%7B%22redirectTo%22%3A%22https%3A%2F%2Fwww.silverwings.com.br%2F_api%2Fiam%2Fauthentication%2Fv1%2Fsso%2Fcallback%2FSITE%2F1cfefa50-f33e-4c78-ab3a-cd059e9f7a5d%2F0e6a50f5-b523-4e29-990d-f37fa2ffdd69%22%2C%22forwardedState%22%3A%22%7B%5C%22tenantInfo%5C%22%3A%7B%5C%22tenantId%5C%22%3A%5C%221cfefa50-f33e-4c78-ab3a-cd059e9f7a5d%5C%22%2C%5C%22tenantType%5C%22%3A%5C%22SITE%5C%22%7D%2C%5C%22customPayload%5C%22%3A%7B%5C%22sessionId%5C%22%3A%5C%2250ff6e24-a15f-4dfe-b67f-d43e8a85d031%5C%22%2C%5C%22encryptionKey%5C%22%3A%5C%22UDtgIkzvEsgBqhJop8t3V%2FTQ5lyrVoFuML%2BN1wA9ZP8%3D%5C%22%7D%7D%22%7D&service=lso&o2v=1&flowName=GeneralOAuthFlow')"
+            >
+            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google" class="w-6 h-6">
+            <span class="font-medium select-none">Login</span>
+            </button>
+        </nav>
+
+        <script src="./assets/js/layout.js"></script>
+    </header>
+
+
+
+  <!-- Player List Section -->
+  <section class="container py-12">
+    <h2 class="text-4xl font-extrabold text-center text-slate-100 drop-shadow-lg relative pb-4
+                after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 
+                after:w-32 after:h-1 after:bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full">
+      Lista de Jogadores
+    </h2>
+
+    <!-- Filters -->
+    <div class="mt-10 mb-10 flex flex-col md:flex-row justify-center gap-4 px-4 md:px-0">
+      <select id="statusFilter" class="p-3 rounded-lg bg-gray-900/80 text-white border border-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 w-full md:w-auto">
+        <option value="all">Todos</option>
+        <option value="online">Online</option>
+        <option value="offline">Offline</option>
+      </select>
+      <select id="vocationFilter" class="p-3 rounded-lg bg-gray-900/80 text-white border border-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 w-full md:w-auto">
+        <option value="all">Todas Vocações</option>
+        <option value="Royal Paladin">Royal Paladin</option>
+        <option value="Elder Druid">Elder Druid</option>
+        <option value="Master Sorcerer">Master Sorcerer</option>
+        <option value="Elite Knight">Elite Knight</option>
+        <option value="Monk">Monk</option>
+      </select>
+      <select id="rankFilter" class="p-3 rounded-lg bg-gray-900/80 text-white border border-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 w-full md:w-auto">
+        <option value="all">Todos Ranks</option>
+      </select>
+    </div>
+
+    <!-- Players Grid -->
+    <div id="playersList" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-0"></div>
+    <div id="loading" class="text-center text-gray-400 mt-6 hidden">Carregando mais jogadores...</div>
+  </section>
+  <script src="./assets/js/guildPlayers.js"></script>
+  <script>
+        // Inicialização
+        document.addEventListener("DOMContentLoaded", () => {
+            new GuildPlayers({
+                apiUrl: 'https://api.tibiadata.com/v4/guild/Silver%20Wings',
+                playersListId: 'playersList',
+                loadingId: 'loading',
+                statusFilterId: 'statusFilter',
+                vocationFilterId: 'vocationFilter',
+                rankFilterId: 'rankFilter'
+            });
+        });
+  </script>
+</body>
+</html>
